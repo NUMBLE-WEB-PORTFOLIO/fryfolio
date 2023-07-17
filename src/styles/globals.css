@@ -7,6 +7,6 @@
     @apply tracking-wider text-[62.5%];
   }
   body {
-    @apply text-[1.6rem];
+    @apply text-[1.6rem] w-screen;
   }
 }

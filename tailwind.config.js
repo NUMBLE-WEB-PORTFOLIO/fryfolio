@@ -6,12 +6,12 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      "main-light": "#FCF7EF",
-    },
     extend: {
       backgroundColor: {
-        main: "#FCF7EF",
+        main: {
+          DEFAULT: "#FFAA00",
+          light: "#FCF7EF",
+        },
       },
     },
   },
