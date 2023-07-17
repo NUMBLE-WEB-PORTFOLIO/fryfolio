@@ -5,7 +5,7 @@ import { EggYork } from "@/components/Motion";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <section className="w-full h-screen">
+      <section className="w-full h-screen overflow-hidden">
         <div className="absolute top-0 left-0 bottom-0 right-0 bg-[#fff]"></div>
         <div className="absolute top-[-10px] left-0 bottom-0 w-full h-srceen overflow-hidden z-10">
           <Image
