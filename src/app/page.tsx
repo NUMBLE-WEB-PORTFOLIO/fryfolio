@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Circle } from "@/components/Motion";
+import { EggYork } from "@/components/Motion";
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
             priority
           />
         </div>
-        <Circle />
+        <EggYork />
       </section>
       <section className="h-screen z-10 bg-main-dark">안녕</section>
     </main>

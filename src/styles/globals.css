@@ -10,4 +10,23 @@
     @apply text-[1.6rem] w-screen;
     -webkit-font-smoothing: antialiased;
   }
+
+  @keyframes underline {
+    to {
+      background-position-y: -60px;
+    }
+  }
+
+  .nav-underline {
+    display: block;
+    position: absolute;
+    left: -5%;
+    bottom: -2px;
+    width: 110%;
+    height: 5px;
+    background-image: url(/images/underline.svg);
+    background-repeat: repeat;
+    animation: underline 1.4s linear infinite;
+    animation-timing-function: steps(10);
+  }
 }
