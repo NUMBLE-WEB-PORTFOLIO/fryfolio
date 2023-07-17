@@ -5,10 +5,10 @@ const NAV_ITEM_CLASSES = "inline-block ml-[3rem]";
 const Header = () => {
   return (
     <div>
-      <div className="fixed top-[4.5rem] left-[4.5rem] z-10">
+      <div className="fixed top-[4.5rem] left-[4.5rem] z-50">
         <Link href="/">Fryfolio</Link>
       </div>
-      <nav className="block fixed top-[4.5rem] right-[4.5rem] z-10">
+      <nav className="block fixed top-[4.5rem] right-[4.5rem] z-50">
         <ul className="flex-row">
           <li className={`${NAV_ITEM_CLASSES}`}>
             <Link href="/">Project</Link>
