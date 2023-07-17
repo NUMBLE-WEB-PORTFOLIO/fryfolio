@@ -1,12 +1,33 @@
 "use client";
 
+import { useRef } from "react";
 import { motion } from "framer-motion";
 
-const CIRCLE_BASE_CLASSES =
-  "lg:w-[30rem] lg:h-[30rem] md:w-[20rem] md:h-[20rem] w-[10rem] h-[10rem] bg-main rounded-[50%]";
+import { useFollowPointer } from "@/hooks";
 
-const Circle = () => {
-  return <motion.div className={`${CIRCLE_BASE_CLASSES}`} />;
+const CIRCLE_BASE_CLASSES =
+  "lg:w-[28rem] lg:h-[28rem] md:w-[18rem] md:h-[18rem] w-[15rem] h-[15rem] rounded-full bg-gradient-york shadow-york";
+
+const Circle = ({ className }: { className?: string }) => {
+  const ref = useRef(null);
+  const { x, y } = useFollowPointer(ref);
+
+  return (
+    <motion.div
+      ref={ref}
+      animate={{ x, y }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{
+        type: "spring",
+        bounce: 0.25,
+        damping: 5,
+        stiffness: 50,
+        restDelta: 0.005,
+      }}
+      className={`${CIRCLE_BASE_CLASSES} ${className}`}
+    />
+  );
 };
 
 export default Circle;

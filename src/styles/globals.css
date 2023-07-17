@@ -8,5 +8,6 @@
   }
   body {
     @apply text-[1.6rem] w-screen;
+    -webkit-font-smoothing: antialiased;
   }
 }
