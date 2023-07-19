@@ -2,12 +2,12 @@ import Link from "next/link";
 
 import { CircleLine } from "@/components/Motion";
 
-const NAV_ITEM = [
-  { title: "Project", pathname: "/", active: true },
-  { title: "About", pathname: "/about", active: false },
-];
+const NAV_ITEM_LIST = [
+  { title: "Project", pathname: "/" },
+  { title: "About", pathname: "/about" },
+] as const;
 
-const Header = () => {
+const Header = ({ activeItem }: { activeItem: string }) => {
   return (
     <div>
       <div className="fixed top-[4.5rem] left-[4.5rem] z-50">
@@ -15,23 +15,26 @@ const Header = () => {
       </div>
       <nav className="block fixed top-[4.5rem] right-[4.5rem] z-50">
         <ul>
-          {NAV_ITEM.map(({ title, pathname, active }) => (
-            <li key={title} className="relative inline-block ml-[3rem]">
-              <Link href={{ pathname }} className="group">
-                <span>{title}</span>
-                <CircleLine
-                  className={`absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] max-w-none path ${
-                    active ? "visible" : "invisible"
-                  }`}
-                />
-                {!active && (
-                  <div
-                    className={`invisible group-hover:visible nav-underline`}
-                  ></div>
-                )}
-              </Link>
-            </li>
-          ))}
+          {NAV_ITEM_LIST.map(({ title, pathname }) => {
+            const isActive = activeItem === title;
+            const circleVisibleClass = isActive ? "visible" : "invisible";
+
+            return (
+              <li key={title} className="relative inline-block ml-[3rem]">
+                <Link href={{ pathname }} className="group">
+                  <span>{title}</span>
+                  <CircleLine
+                    className={`absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] max-w-none path ${circleVisibleClass}`}
+                  />
+                  {!isActive && (
+                    <div
+                      className={`invisible group-hover:visible nav-underline`}
+                    />
+                  )}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </div>
