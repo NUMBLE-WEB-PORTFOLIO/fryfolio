@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 
 import { useFollowPointer } from "@/hooks";
 
-const CIRCLE_BASE_CLASSES =
-  "lg:w-[28rem] lg:h-[28rem] md:w-[18rem] md:h-[18rem] w-[15rem] h-[15rem] rounded-full bg-gradient-york shadow-york";
+const YORK_BASE_CLASSES =
+  "absolute lg:w-[28rem] lg:h-[28rem] md:w-[18rem] md:h-[18rem] w-[15rem] h-[15rem] rounded-full bg-gradient-york shadow-york";
 
-const Circle = ({ className }: { className?: string }) => {
+const EggYork = ({ className }: { className?: string }) => {
   const ref = useRef(null);
   const { x, y } = useFollowPointer(ref);
 
@@ -25,9 +25,9 @@ const Circle = ({ className }: { className?: string }) => {
         stiffness: 50,
         restDelta: 0.005,
       }}
-      className={`${CIRCLE_BASE_CLASSES} ${className}`}
+      className={`${YORK_BASE_CLASSES} ${className}`}
     />
   );
 };
 
-export default Circle;
+export default EggYork;
