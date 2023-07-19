@@ -7,9 +7,18 @@ const NAV_ITEM_LIST = [
   { title: "About", pathname: "/about" },
 ] as const;
 
-const Header = ({ activeItem }: { activeItem: string }) => {
+const Header = ({
+  activeItem,
+  mode = "dark",
+}: {
+  activeItem: string;
+  mode?: "dark" | "light";
+}) => {
+  const textColorClass = mode === "light" ? "text-white" : "text-black";
+  const circlePathColorClass = mode === "light" ? "white" : "black";
+
   return (
-    <div>
+    <div className={textColorClass}>
       <div className="fixed top-[4.5rem] left-[4.5rem] z-50">
         <Link href="/">Fryfolio</Link>
       </div>
@@ -24,6 +33,7 @@ const Header = ({ activeItem }: { activeItem: string }) => {
                 <Link href={{ pathname }} className="group">
                   <span>{title}</span>
                   <CircleLine
+                    color={circlePathColorClass}
                     className={`absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] max-w-none path ${circleVisibleClass}`}
                   />
                   {!isActive && (

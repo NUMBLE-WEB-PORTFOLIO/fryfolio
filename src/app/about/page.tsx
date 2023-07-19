@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
+import { IntroductionSection } from "@/components/Sections";
 
 export const metadata: Metadata = {
   title: "About",
@@ -8,8 +9,10 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
-      <Header activeItem="About" />
-      <main>About 페이지</main>
+      <Header activeItem="About" mode="light" />
+      <main>
+        <IntroductionSection />
+      </main>
     </>
   );
 }
