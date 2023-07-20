@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 import { RandomEggs, WaveText } from "@/components//Motion";
-import { HighlightOver, IconButton } from "@/components/Common";
+import { Highlight, IconButton } from "@/components/Common";
 
 const IntroductionSection = () => {
   return (
@@ -30,12 +30,12 @@ const IntroductionSection = () => {
         >
           <p>새로운 아이디어를 생각하고 실현하는 과정을 좋아해요.</p>
           <p>
-            <HighlightOver>긍정적인 에너지</HighlightOver>로
+            <Highlight>긍정적인 에너지</Highlight>로
             <br />
             세상에 이로운 것을 만들어 내고
             <br />
-            <HighlightOver>세상에 가치를 더해나갈 수 있는 개발자</HighlightOver>
-            가 되고 싶어요.
+            <Highlight>세상에 가치를 더해나갈 수 있는 개발자</Highlight>가 되고
+            싶어요.
           </p>
         </motion.div>
         <motion.div
@@ -49,8 +49,12 @@ const IntroductionSection = () => {
           }}
           className="flex gap-[2rem] w-fit z-10"
         >
-          <IconButton name="github" href="https://github.com/gxxrxn" />
-          <IconButton name="globe" href="https://gxxrxn.github.io" />
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <IconButton name="github" href="https://github.com/gxxrxn" />
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <IconButton name="globe" href="https://gxxrxn.github.io" />
+          </motion.div>
         </motion.div>
       </div>
     </section>
