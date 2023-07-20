@@ -27,35 +27,42 @@ const RandomEggs = () => {
       <motion.div
         {...opacityMotion}
         transition={{ duration: 0.3, ease: "easeIn" }}
-        className="absolute top-[20rem] left-[15rem] w-[7rem] h-[7rem]"
+        className="absolute top-[20rem] left-[10%] w-[12rem] h-[12rem]"
       >
         <Image src="/images/egg-illustration.svg" alt="egg illustration" fill />
       </motion.div>
       <motion.div
         {...opacityMotion}
         transition={{ duration: 0.3, ease: "easeIn" }}
-        className="absolute top-[50%] right-[15rem] w-[10rem] h-[10rem]"
+        className="invisible lg:visible absolute bottom-[50%] right-[20rem] w-[20rem] h-[20rem]"
       >
         <Image src="/images/egg-illustration.svg" alt="egg illustration" fill />
       </motion.div>
       <motion.div
         {...opacityMotion}
         transition={{ duration: 0.3, ease: "easeIn" }}
-        className="absolute bottom-[10rem] left-[40%] w-[8rem] h-[8rem]"
+        className="invisible lg:visible absolute bottom-[10rem] left-[40%] w-[8rem] h-[8rem]"
       >
         <Image src="/images/egg-illustration.svg" alt="egg illustration" fill />
       </motion.div>
       <motion.div
         {...opacityMotion}
         transition={{ duration: 0.3, ease: "easeIn" }}
-        className="invisible md:max-2xl:visible lg:visible absolute top-[-1rem] left-[70%] w-[15rem] h-[15rem]"
+        className="invisible md:visible absolute top-[-1rem] right-[40%] w-[15rem] h-[15rem]"
       >
         <Image src="/images/egg-illustration.svg" alt="egg illustration" fill />
       </motion.div>
       <motion.div
         {...opacityMotion}
         transition={{ duration: 0.3, ease: "easeIn" }}
-        className="absolute bottom-[-5rem] left-[-3rem] w-[25rem] h-[25rem]"
+        className="absolute bottom-[10rem] right-[3%] w-[15rem] h-[15rem]"
+      >
+        <Image src="/images/egg-illustration.svg" alt="egg illustration" fill />
+      </motion.div>
+      <motion.div
+        {...opacityMotion}
+        transition={{ duration: 0.3, ease: "easeIn" }}
+        className="absolute bottom-[-5rem] left-[-3rem] w-[15rem] h-[15rem] md:w-[25rem] md:h-[25rem]"
       >
         <Image src="/images/egg-illustration.svg" alt="egg illustration" fill />
       </motion.div>
