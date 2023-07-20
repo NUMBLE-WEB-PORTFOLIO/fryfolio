@@ -7,10 +7,10 @@ import { Highlight, IconButton } from "@/components/Common";
 
 const IntroductionSection = () => {
   return (
-    <section className="w-full h-screen flex flex-col justify-center overflow-hidden px-[15%] lg:px-[20%] pb-[5rem] bg-black">
+    <section className="w-full h-screen flex flex-col justify-center items-center overflow-hidden px-[15%] lg:px-[20%] md:items-start pb-[5rem] bg-black">
       <RandomEggs />
-      <div className="relative w-fit h-fit flex flex-col gap-[5.3rem] justify-center bg-black/20">
-        <div className="text-white font-black text-[4rem] md:text-[5.3rem] leading-[5rem] md:leading-[6rem] tracking-normal w-fit z-10">
+      <div className="relative w-fit h-fit flex flex-col gap-[5.3rem] justify-center bg-black/40 rounded-md p-[1rem]">
+        <div className="text-white font-black text-[3.5rem] md:text-[5.3rem] leading-[4rem] md:leading-[6rem] tracking-normal w-fit z-10">
           <WaveText text="안녕하세요!" />
           <WaveText
             text="저는 김규란입니다"
