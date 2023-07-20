@@ -7,9 +7,9 @@ import { HighlightOver, IconButton } from "@/components/Common";
 
 const IntroductionSection = () => {
   return (
-    <section className="w-full h-screen overflow-hidden pl-[25%] bg-black pb-[6rem]">
+    <section className="w-full h-screen overflow-hidden pl-[25%] bg-black">
       <RandomEggs />
-      <div className="w-full h-screen flex flex-col gap-[5.3rem] justify-center">
+      <div className="w-full h-full flex flex-col gap-[5.3rem] justify-center pb-[10rem]">
         <div className="text-white font-black text-[5.3rem] leading-[7rem] tracking-normal w-fit z-10">
           <WaveText text="안녕하세요!" />
           <WaveText
@@ -30,10 +30,10 @@ const IntroductionSection = () => {
         >
           <p>새로운 아이디어를 생각하고 실현하는 과정을 좋아해요.</p>
           <p>
-            <HighlightOver>긍정적인 에너지</HighlightOver>
-            로 세상에 이로운 것을 만들어 내고,
+            <HighlightOver>긍정적인 에너지</HighlightOver>로
             <br />
-            계속해서{" "}
+            세상에 이로운 것을 만들어 내고
+            <br />
             <HighlightOver>세상에 가치를 더해나갈 수 있는 개발자</HighlightOver>
             가 되고 싶어요.
           </p>
