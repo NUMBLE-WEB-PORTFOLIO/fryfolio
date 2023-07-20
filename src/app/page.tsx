@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <>
       <Header activeItem="Project" />
-      <main className="w-screen min-h-screen flex flex-col">
+      <main className="w-screen h-[100dvh] min-h-screen">
         <EggInteractionSection />
-        <section className="h-screen z-10 bg-[#fff]">Section 2</section>
+        <section className="h-[100dvh] z-10 bg-[#fff]">Section 2</section>
       </main>
     </>
   );

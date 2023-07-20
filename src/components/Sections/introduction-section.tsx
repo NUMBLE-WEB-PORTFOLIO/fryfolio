@@ -7,7 +7,7 @@ import { Highlight, IconButton } from "@/components/Common";
 
 const IntroductionSection = () => {
   return (
-    <section className="w-full h-screen flex flex-col justify-center items-center overflow-hidden px-[15%] lg:px-[20%] md:items-start pb-[5rem] bg-black">
+    <section className="w-full h-full flex flex-col justify-center items-center overflow-hidden px-[10%] pt-[4.5rem] md:px-[15%] lg:px-[20%] md:items-start md:pb-[5rem] bg-black">
       <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full overflow-hidden">
         <EggFried className="top-[20rem] left-[10%] w-[12rem] h-[12rem]" />
         <EggFried className="invisible lg:visible bottom-[50%] right-[20rem] w-[20rem] h-[20rem]" />

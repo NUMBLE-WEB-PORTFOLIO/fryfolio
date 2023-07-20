@@ -11,7 +11,7 @@ export default function About() {
   return (
     <>
       <Header activeItem="About" mode="light" />
-      <main className="relative">
+      <main className="w-screen h-[100dvh] relative">
         <IntroductionSection />
       </main>
     </>
