@@ -2,15 +2,22 @@
 
 import { motion } from "framer-motion";
 
-import { RandomEggs, WaveText } from "@/components//Motion";
+import { EggFried, WaveText } from "@/components//Motion";
 import { Highlight, IconButton } from "@/components/Common";
 
 const IntroductionSection = () => {
   return (
     <section className="w-full h-screen flex flex-col justify-center items-center overflow-hidden px-[15%] lg:px-[20%] md:items-start pb-[5rem] bg-black">
-      <RandomEggs />
+      <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full overflow-hidden">
+        <EggFried className="top-[20rem] left-[10%] w-[12rem] h-[12rem]" />
+        <EggFried className="invisible lg:visible bottom-[50%] right-[20rem] w-[20rem] h-[20rem]" />
+        <EggFried className="invisible lg:visible bottom-[10rem] left-[40%] w-[8rem] h-[8rem]" />
+        <EggFried className="invisible md:visible top-[-1rem] right-[40%] w-[15rem] h-[15rem]" />
+        <EggFried className="bottom-[10rem] right-[3%] w-[15rem] h-[15rem]" />
+        <EggFried className="bottom-[-5rem] left-[-3rem] w-[15rem] h-[15rem] md:w-[25rem] md:h-[25rem]" />
+      </div>
       <div className="relative w-fit h-fit flex flex-col gap-[5.3rem] justify-center bg-black/40 rounded-md p-[1rem]">
-        <div className="text-white font-black text-[3.5rem] md:text-[5.3rem] leading-[4rem] md:leading-[6rem] tracking-normal w-fit z-10">
+        <div className="text-white font-black text-[3.5rem] md:text-[5.5rem] leading-[4rem] md:leading-[6rem] tracking-normal w-fit z-10">
           <WaveText text="안녕하세요!" />
           <WaveText
             text="저는 김규란입니다"
@@ -28,14 +35,17 @@ const IntroductionSection = () => {
           }}
           className="flex flex-col gap-[1.5rem] font-thin text-white text-[2rem] leading-[2.5rem] w-fit z-10"
         >
-          <p>새로운 아이디어를 생각하고 실현하는 과정을 좋아해요.</p>
           <p>
-            <Highlight>긍정적인 에너지</Highlight>로
+            새롭고 재밌는 아이디어를 생각하고 실현하는 과정을 좋아해요.
             <br />
-            세상에 이로운 것을 만들어 내고
+            제가 만든 화면으로 사람들과 소통할 수 있는 웹 개발자가 되길 꿈꾸며
             <br />
-            <Highlight>세상에 가치를 더해나갈 수 있는 개발자</Highlight>가 되고
-            싶어요.
+            노력하고 있어요.
+          </p>
+          <p>
+            <Highlight>긍정적인 에너지</Highlight>로 세상에 이로운 것을 만들고
+            <br />
+            세상에 가치를 더해나갈 수 있는 개발자가 되고 싶어요!
           </p>
         </motion.div>
         <motion.div
