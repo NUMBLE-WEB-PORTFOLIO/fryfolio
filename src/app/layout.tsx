@@ -1,11 +1,32 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-import Header from "@/components/Header";
+import localFont from "next/font/local";
 
 import "@/styles/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const pretendard = localFont({
+  src: [
+    {
+      path: "./_fonts/PretendardStd-Black.woff2",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "./_fonts/PretendardStd-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./_fonts/PretendardStd-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./_fonts/PretendardStd-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+});
 
 export const metadata: Metadata = {
   title: "Fryfolio",
@@ -19,10 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body className={`${inter.className} bg-main-dark`}>
-        <Header />
-        {children}
-      </body>
+      <body className={`${pretendard.className} bg-main-dark`}>{children}</body>
     </html>
   );
 }

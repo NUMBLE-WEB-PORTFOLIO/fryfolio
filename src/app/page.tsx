@@ -1,10 +1,14 @@
+import Header from "@/components/Header";
 import { EggInteractionSection } from "@/components/Sections";
 
 export default function Home() {
   return (
-    <main className="w-screen min-h-screen flex flex-col">
-      <EggInteractionSection />
-      <section className="h-screen z-10 bg-[#fff]">Section 2</section>
-    </main>
+    <>
+      <Header activeItem="Project" />
+      <main className="w-screen h-[100dvh] min-h-screen">
+        <EggInteractionSection />
+        <section className="h-[100dvh] z-10 bg-[#fff]">Section 2</section>
+      </main>
+    </>
   );
 }

@@ -4,7 +4,7 @@ import { EggYork as AnimatedEggYork, BounceBox } from "@/components/Motion";
 
 const EggInteractionSection = () => {
   return (
-    <section className="w-full h-screen overflow-hidden flex justify-center">
+    <section className="w-full h-full overflow-hidden flex justify-center">
       <div className="absolute top-0 left-0 bottom-0 right-0 bg-[#fff]"></div>
       <div className="absolute top-[-10px] left-0 bottom-0 w-full h-srceen overflow-hidden z-10">
         <Image

@@ -6,6 +6,13 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      yellow: {
+        800: "#FFC211",
+      },
+      white: "#ffffff",
+      black: "#000000",
+    },
     extend: {
       boxShadow: {
         york: "0px 0px 29px 1px rgba(221, 170, 69, 0.6)",
