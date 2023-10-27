@@ -4,19 +4,14 @@ import { EggYork as AnimatedEggYork, BounceBox } from "@/components/Motion";
 
 const EggInteractionSection = () => {
   return (
-    <section className="w-full h-full overflow-hidden flex justify-center">
+    <section className="w-full h-full overflow-hidden flex justify-center relative">
       <div className="absolute top-0 left-0 bottom-0 right-0 bg-[#fff]"></div>
-      <div className="absolute top-[-10px] left-0 bottom-0 w-full h-srceen overflow-hidden z-10">
+      <div className="absolute top-[-10px] left-0 right-0 bottom-0 w-full h-srceen overflow-hidden z-10">
         <Image
           src="/images/eggline-filled.svg"
           alt="background egg"
-          style={{
-            objectFit: "cover",
-            objectPosition: "calc(50% - 2rem) bottom",
-          }}
-          className="min-w-[104%] min-h-[104%]"
+          className="relative scale-[104%] overflow-hidden object-cover"
           fill
-          priority
         />
       </div>
       <AnimatedEggYork />
