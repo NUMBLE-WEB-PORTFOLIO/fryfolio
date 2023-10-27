@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Header activeItem="Project" />
-      <main className="w-screen h-[100dvh] min-h-screen">
+      <main className="w-full h-[100dvh] min-h-screen">
         <EggInteractionSection />
         <ProjectSection />
       </main>

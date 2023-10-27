@@ -40,7 +40,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body className={`${pretendard.className} bg-main-dark`}>{children}</body>
+      <body
+        className={`${pretendard.className} bg-main-dark w-screen h-[100dvh] min-h-screen overflow-x-hidden`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
