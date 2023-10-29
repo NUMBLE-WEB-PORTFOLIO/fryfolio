@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import { EggInteractionSection } from "@/components/Sections";
+import ProjectSection from "@/components/Sections/proejct-section";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <Header activeItem="Project" />
       <main className="w-full h-[100dvh] min-h-screen">
         <EggInteractionSection />
-        <section className="h-[100dvh] z-10 bg-[#fff]">Section 2</section>
+        <ProjectSection />
       </main>
     </>
   );
