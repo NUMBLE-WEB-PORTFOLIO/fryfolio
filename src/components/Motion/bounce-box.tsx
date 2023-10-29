@@ -6,18 +6,23 @@ import { motion } from "framer-motion";
 
 type BounceBoxProps = PropsWithChildren<{
   className?: string;
+  repeat?: number;
 }>;
 
-const BounceBox = ({ className, children }: BounceBoxProps) => {
+const BounceBox = ({
+  className,
+  repeat = Infinity,
+  children,
+}: BounceBoxProps) => {
   return (
     <motion.div
-      animate={{
+      whileInView={{
         y: ["5px", "-5px", "5px"],
       }}
       transition={{
         y: {
           duration: 0.8,
-          repeat: Infinity,
+          repeat: repeat,
         },
       }}
       className={`${className}`}
