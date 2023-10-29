@@ -20,14 +20,15 @@ const ProjectSection = () => {
 };
 
 const DadokCard = () => (
-  <ProjectCard name="dadok" className=" top-[21.9rem] left-[16vw]">
+  <ProjectCard name="dadok" className=" top-[21.9rem] left-[17vw]">
     <motion.figure
       initial={{ x: "-50%", y: "30%" }}
-      whileInView={{ x: "-50%", y: "-15%" }}
+      whileInView={{ x: "-50%", y: "-25%" }}
       transition={{ duration: 0.3 }}
       className="absolute left-1/2 top-1/2"
     >
       <Image
+        className="rounded-[0.5rem]"
         src="/images/project/dadok.png"
         width={200}
         height={434}
@@ -39,13 +40,13 @@ const DadokCard = () => (
 );
 
 const PomoCard = () => (
-  <ProjectCard name="pomo" className="top-[73.2rem] right-[10vw]">
+  <ProjectCard name="pomo" className="top-[73.2rem] right-[13vw]">
     <figure className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-      <BounceBox repeat={2}>
+      <BounceBox repeat={2} className="w-[9rem] h-auto sm:w-full">
         <Image
           src="/images/project/pomo.png"
           width={130}
-          height={120}
+          height={113}
           alt="뽀모"
           priority
         />
@@ -56,19 +57,29 @@ const PomoCard = () => (
 
 const CollusicCard = () => (
   <ProjectCard name="collusic" className="top-[117rem] left-[16vw]">
-    <div className="flex gap-[1rem] absolute top-1/2 -translate-y-1/2">
-      <figure className="relative w-[30rem] h-[20.4rem] p-0">
-        <Image src="/images/project/collusic1.png" alt="collusic-main" fill />
+    <div className="flex gap-[1rem] absolute top-1/2 -translate-y-1/2 -translate-x-1">
+      <figure className="relative sm:w-[30rem] sm:h-[20.4rem] w-[24rem] h-auto">
+        <Image
+          src="/images/project/collusic1.png"
+          alt="collusic-main"
+          width={300}
+          height={204}
+        />
       </figure>
-      <figure className="relative w-[36.2rem] h-[20.4rem] p-0">
-        <Image src="/images/project/collusic2.png" alt="collusic-detail" fill />
+      <figure className="relative sm:w-[36.2rem] sm:h-[20.4rem] w-[29rem] h-auto">
+        <Image
+          src="/images/project/collusic2.png"
+          alt="collusic-detail"
+          width={362}
+          height={204}
+        />
       </figure>
     </div>
   </ProjectCard>
 );
 
 const OnthewayCard = () => (
-  <ProjectCard name="ontheway" className="top-[160rem] right-[15vw]">
+  <ProjectCard name="ontheway" className="top-[160rem] right-[19vw]">
     <figure className="absolute top-1/2 -translate-y-1/2">
       <Image
         src="/images/project/jmt-c.gif"

@@ -10,7 +10,7 @@ const EggInteractionSection = () => {
         <Image
           src="/images/eggline-filled.svg"
           alt="background egg"
-          className="relative sm:scale-[104%] overflow-hidden"
+          className="relative sm:scale-[104%] overflow-hidden object-none"
           fill
         />
       </div>
