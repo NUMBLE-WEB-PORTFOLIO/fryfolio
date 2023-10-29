@@ -50,7 +50,7 @@ const ProjectCard = ({
       variants={cardVariants}
       transition={{ duration: 0.3, ease: "easeOut" }}
       viewport={{ amount: 0.4 }}
-      className={`sm:w-[40rem] sm:h-[31rem] w-[25rem] h-[18rem] ${className} ${backgroundColor} rounded-[0.5rem] z-[10] absolute cursor-pointer`}
+      className={`sm:w-[40rem] sm:h-[31rem] w-[28rem] h-[21.5rem] ${className} ${backgroundColor} rounded-[0.5rem] z-[10] absolute cursor-pointer`}
     >
       <span className="w-[5.3rem] h-[5.3rem] absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
         <ColorEgg color={colors} />
