@@ -1,5 +1,11 @@
-const Highlight = ({ children }: { children?: React.ReactNode }) => {
-  return <span className="text-yellow-800 font-normal">{children}</span>;
+const Highlight = ({
+  children,
+  textColor = "text-yellow-800",
+}: {
+  children?: React.ReactNode;
+  textColor?: string;
+}) => {
+  return <span className={`${textColor} font-normal`}>{children}</span>;
 };
 
 export default Highlight;
