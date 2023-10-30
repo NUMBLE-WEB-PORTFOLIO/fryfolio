@@ -19,10 +19,10 @@ const Header = ({
 
   return (
     <div className={textColorClass}>
-      <div className="fixed top-[4.5rem] left-[4.5rem] z-50">
+      <div className="fixed top-[4.5rem] left-[4.5rem] z-20">
         <Link href="/">Fryfolio</Link>
       </div>
-      <nav className="block fixed top-[4.5rem] right-[4.5rem] z-50">
+      <nav className="block fixed top-[4.5rem] right-[4.5rem] z-20">
         <ul>
           {NAV_ITEM_LIST.map(({ title, pathname }) => {
             const isActive = activeItem === title;
