@@ -2,11 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { ComponentProps } from "react";
 
-type IconType = "github" | "globe";
+type IconType = "github" | "globe" | "video";
 
 const Icons: Record<IconType, { name: string; src: string }> = {
   github: { name: "github", src: "/icons/github.svg" },
   globe: { name: "globe", src: "/icons/globe.svg" },
+  video: { name: "video", src: "/icons/video.svg" },
 };
 
 const IconButton = ({
