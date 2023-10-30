@@ -28,14 +28,14 @@ const Modal = ({
   return (
     <Portal id="modal-root">
       <div className="fixed inset-0 z-30 w-screen overflow-y-scroll">
-        <div className="fixed inset-0 bg-black/50"></div>
+        <div className="fixed inset-0 bg-black/70"></div>
         <div className="flex min-h-full justify-center p-4 sm:items-center">
           <section
-            className="relative overflow-scroll bg-black sm:max-w-[70rem] w-full sm:my-8 rounded-[0.5rem] flex flex-col justify-center text-white p-[5rem] gap-[2rem] min-h-[30rem] box-border"
+            className="relative overflow-scroll bg-black sm:max-w-[70rem] w-full sm:my-8 rounded-[0.5rem] flex flex-col justify-center text-white p-[5rem] gap-[2rem] min-h-[30rem] box-border pt-[10rem]"
             onClick={stopPropagation}
           >
             <IconClose
-              className="w-[3rem] h-[3rem] fill-white cursor-pointer absolute right-[5rem] top-[5rem]"
+              className="w-[3rem] h-[3rem] fill-white cursor-pointer absolute right-[4rem] top-[4rem]"
               onClick={onClose}
             />
             {open && children}
