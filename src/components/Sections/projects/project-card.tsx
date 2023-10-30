@@ -5,10 +5,11 @@ import { PropsWithChildren } from "react";
 import { ColorEgg } from "@/components/Common";
 import { Variants, motion } from "framer-motion";
 
+// project 추가 시 아래에 themes 값 추가
 const themes = {
   dadok: {
-    backgroundColor: "bg-[#FFC073]",
-    colors: ["#FFD480", "#FF8282"] as [string, string],
+    backgroundColor: "bg-[#998C88]",
+    colors: ["#FBF2CF", "#FFA436"] as [string, string],
   },
   pomo: {
     backgroundColor: "bg-[#FBF2CF]",
@@ -32,7 +33,7 @@ interface ProjectCardProps {
 const cardVariants: Variants = {
   hidden: { opacity: 0.1 },
   visible: { opacity: 1 },
-  zoom: { scale: 1.1 },
+  zoom: { scale: 1.05 },
 };
 
 const ProjectCard = ({
