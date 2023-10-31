@@ -17,6 +17,24 @@ const PROJECTS = {
       video: "https://www.youtube.com/watch?v=wzx3kuox3ZI",
     },
   },
+  fryfolio: {
+    title: "Fryfolio",
+    introduction: "인터렉티브한 개인 웹 포트폴리오 페이지",
+    skills: ["PWA", "TypeScript", "Next.js", "Framer Motion", "Tailwind CSS"],
+    sideInformations: ["2023.07 -"],
+    descriptions: [
+      `계란 🥚 이라는 저만의 아이덴디티를 담아 직접 디자인하고 개발한 인터렉티브한 웹 포트폴리오예요.
+      새로운 기술들을 공부해서 도입해보는 저만의 sandbox 이기도 해요.`,
+      {
+        text: `최근에는 PWA 기술을 적용해봤어요!`,
+        href: "https://gxxrxn.github.io/nextjs-pwa/",
+      },
+    ],
+    links: {
+      webpage: "https://fryfolio.vercel.app",
+      github: "https://github.com/NUMBLE-WEB-PORTFOLIO/fryfolio",
+    },
+  },
   pomo: {
     title: "뽀모",
     introduction:

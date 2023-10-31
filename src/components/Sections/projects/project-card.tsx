@@ -7,6 +7,7 @@ import { Variants, motion } from "framer-motion";
 import {
   IconCollusicLogo,
   IconDadokLogo,
+  IconFryfoliokLogo,
   IconOnthewayLogo,
   IconPomoLogo,
 } from "@/public/icons";
@@ -15,7 +16,7 @@ import Modal from "@/components/Common/modal";
 
 import PROJECTS from "@/constants/project";
 
-type ProjectType = "dadok" | "pomo" | "collusic" | "ontheway";
+type ProjectType = "dadok" | "fryfolio" | "pomo" | "collusic" | "ontheway";
 
 type ProjectInfo = {
   logo: ReactNode;
@@ -32,6 +33,11 @@ const themes = {
     logo: <IconDadokLogo />,
     backgroundColor: "bg-[#FFC073]",
     colors: ["#FBF2CF", "#FF8282"] as [string, string],
+  },
+  fryfolio: {
+    logo: <IconFryfoliokLogo />,
+    backgroundColor: "bg-[#FFF1DD]",
+    colors: ["#000000", "#FFB84E"] as [string, string],
   },
   pomo: {
     logo: <IconPomoLogo />,
@@ -78,7 +84,7 @@ const ProjectCard = ({
       variants={cardVariants}
       transition={{ duration: 0.3, ease: "easeOut" }}
       viewport={{ amount: 0.4 }}
-      className={`sm:w-[40rem] sm:h-[31rem] w-[28rem] h-[21.5rem] ${className} ${backgroundColor} rounded-[0.5rem] z-[10] absolute cursor-pointer`}
+      className={`lg:w-[39rem] lg:h-[31rem] w-[28rem] h-[21.5rem] ${className} ${backgroundColor} rounded-[0.5rem] z-[10] absolute cursor-pointer`}
       onClick={() => setOpen((prev) => !prev)}
     >
       <span className="w-[5.3rem] h-[5.3rem] absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
