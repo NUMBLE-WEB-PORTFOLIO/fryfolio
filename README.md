@@ -11,3 +11,4 @@
 ![Yarn Berry](https://img.shields.io/static/v1?style=for-the-badge&message=Yarn+Berry&color=2C8EBB&logo=Yarn&logoColor=FFFFFF&label=)
 ![Vercel](https://img.shields.io/static/v1?style=for-the-badge&message=Vercel&color=000000&logo=Vercel&logoColor=FFFFFF&label=)
 
+![fryfolio](https://github.com/NUMBLE-WEB-PORTFOLIO/fryfolio/assets/57716832/5f4f3de2-82c4-4e22-b637-daf4a6210805)
