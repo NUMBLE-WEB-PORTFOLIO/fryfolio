@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
+import ServiceWorkerProvider from "@/pwa/service-worker-provider";
 import "@/styles/globals.css";
 
 const pretendard = localFont({
@@ -108,7 +109,7 @@ export default function RootLayout({
       <body
         className={`${pretendard.className} bg-main-dark w-screen h-[100dvh] min-h-screen overflow-x-hidden`}
       >
-        {children}
+        <ServiceWorkerProvider>{children}</ServiceWorkerProvider>
       </body>
     </html>
   );
