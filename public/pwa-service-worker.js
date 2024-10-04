@@ -1,4 +1,4 @@
-const _version = "v0.0.6";
+const _version = "v0.0.11";
 const cacheName = "fryfolio-cache_" + _version;
 
 const log = (...msg) =>
@@ -9,7 +9,7 @@ const fetchAndCache = async (event) => {
   const cachedResponse = response.clone();
 
   const cache = await caches.open(cacheName);
-  cache.put(event.request, cachedResponse);
+  await cache.put(event.request, cachedResponse);
 
   return response;
 };
@@ -25,6 +25,9 @@ self.addEventListener("install", (event) => {
         "/icons/globe.svg",
         "/icons/video.svg",
         "/images/egg-illustration.svg",
+        "/images/corn.png",
+        "/offline",
+        "/",
       ]);
     })
   );
@@ -64,6 +67,8 @@ self.addEventListener("fetch", (event) => {
         log("cache hit!");
         return caches.match(event.request);
       })
-      .then((res) => res)
+      .then((res) => {
+        return res || caches.match("/offline");
+      })
   );
 });

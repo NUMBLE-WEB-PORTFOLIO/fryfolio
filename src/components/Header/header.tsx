@@ -11,7 +11,7 @@ const Header = ({
   activeItem,
   mode = "dark",
 }: {
-  activeItem: string;
+  activeItem: (typeof NAV_ITEM_LIST)[number]["title"];
   mode?: "dark" | "light";
 }) => {
   const textColorClass = mode === "light" ? "text-white" : "text-black";
