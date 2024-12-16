@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useFollowPointer } from "@/hooks";
 
 const YORK_BASE_CLASSES =
-  "absolute lg:w-[28rem] lg:h-[28rem] md:w-[18rem] md:h-[18rem] w-[15rem] h-[15rem] rounded-full bg-gradient-york shadow-york";
+  "absolute lg:w-[26rem] lg:h-[26rem] md:w-[18rem] md:h-[18rem] w-[16rem] h-[16rem] rounded-full bg-gradient-york shadow-york";
 
 const EggYork = ({ className }: { className?: string }) => {
   const ref = useRef(null);
